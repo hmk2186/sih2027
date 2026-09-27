@@ -30,7 +30,7 @@ export default function DashboardPage({ currentUser }) {
       setStats(data);
       setError('');
     } catch (err) {
-      setError('Unable to fetch live telemetry. Confirm backend is running at http://127.0.0.1:8000.');
+      setError('Unable to fetch live telemetry. Confirm backend is running at https://sih2027-2.onrender.com.');
     } finally {
       setLoading(false);
     }

@@ -26,7 +26,7 @@ export default function LoginPage({ onLoginSuccess }) {
       onLoginSuccess(data.user);
       navigate('/dashboard');
     } catch (err) {
-      setError('Authentication failed. Ensure backend server is active at http://127.0.0.1:8000.');
+      setError('Authentication failed. Ensure backend server is active at https://sih2027-2.onrender.com.');
     } finally {
       setLoading(false);
     }

@@ -46,7 +46,7 @@ export default function ReviewPage({ currentUser, onToast }) {
           selectOutput(target);
         } else {
           // If not in pending list, fetch directly
-          const single = await fetch(`http://127.0.0.1:8000/api/generations/output/${routeOutputId}`).then(r => r.json());
+          const single = await fetch(`https://sih2027-2.onrender.com/api/generations/output/${routeOutputId}`).then(r => r.json());
           selectOutput(single);
         }
       } else if (data.length > 0) {
